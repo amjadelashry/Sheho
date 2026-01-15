@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مفاجأة لـ شيهو ✨</title>
+    <style>
+        :root {
+            --stitch-blue: #48cae4;
+            --lilo-purple: #7b2cbf;
+            --glass-bg: rgba(255, 255, 255, 0.95);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a75ff, #7b2cbf, #ff9e00);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        #countdown-screen {
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        #timer {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+            padding: 20px 40px;
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            margin: 20px 0;
+            display: flex;
+            gap: 15px;
+            direction: ltr;
+        }
+
+        .container {
+            text-align: center;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            max-width: 90%;
+            width: 400px;
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 { color: var(--lilo-purple); margin-bottom: 20px; }
+
+        .btn {
+            background: linear-gradient(90deg, #48cae4, #0077b6);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        #message-area {
+            display: none;
+            text-align: right;
+            line-height: 1.8;
+            color: #333;
+            padding: 15px;
+            background: rgba(123, 44, 191, 0.1);
+            border-radius: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="countdown-screen">
+        <h1>فاضل على يوم القمر.. ✨</h1>
+        <div id="timer">00 : 00 : 00 : 00</div>
+        <p>Days : Hours : Minutes : Seconds</p>
+    </div>
+
+    <div id="main-content" class="container">
+        <img id="stitch-img" src="photo-1.jpg" alt="Stitch">
+        <h1 id="main-text">إنتي شيهو؟ 🧐</h1>
+        <div id="buttons">
+            <button class="btn" onclick="nextStep(1)">أيوة أنا 🌚</button>
+        </div>
+        
+        <div id="message-area">
+            يا شيهو.. النهاردة مش مجرد يوم عادي، النهاردة عيد ميلاد أكتر حد غالي وقريب لقلبي.. 🎂🎈 <br>
+            كنت مستني اليوم ده بجد عشان أقولك كلام كتير يمكن مبيتقالش كل يوم، بس إنتي فعلاً تستاهلي تسمعيه وتستاهلي أكتر من كدة بكتير.. 🥹🩵 <br>
+           
+           أول حاجة، كل سنة وإنتي طيبة يا أجدع وأحن صديقة في الدنيا، وعقبال سنين كتير أوي وإنتي محققة كل اللي بتتمنيه، وتكون سنة سعيدة عليكي وتعوضك عن أي تعب شوفتيه، وتفضلي دايماً مكسرة الدنيا بنجاحك وضحكتك اللي بتنور حياة اللي حواليكي.. 🌸✨ <br> 
+           تاني حاجة، أنا اللي بجد ممتن ومبسوط جداً إن الدنيا عرفتني على حد زيك.. إنتي قولتي إنك مكنتيش تتوقعي نكون قريبين كده، وأنا عايز أقولك إن وجودك في حياتي كان رزق مكنتش مرتب له، بس بقى أغلى حاجة عندي.. 💎  <br> 
+            الثقة اللي بيننا دي حاجة نادرة، وإنك تكوني الشخص اللي بحكي له وبطمن وأنا بتكلم معاه، دي مكانة محدش غيرك عرف يوصل لها ولا هيعرف يوصل لها أصلاً.. 🫂❤️ <br>
+            عايزك تتأكدي إن زعلنا اللي فات أو أي وقت اختفيت فيه، مكنش أبداً بسببك ولا تقليل من غلاوتك، بالعكس، غلاوتك هي اللي كانت بتخليني عايز أرجع وأنا في أحسن حال عشان أليق بصداقتك.. أنا كمان اتعودت على وجودك، وبقيتي جزء أساسي من يومي، يومي مش بيكمل من غير ما ندردش حتى لو في حاجات بسيطة زي ما بنقول، بس التفاصيل دي معاكي ليها طعم تاني خالص.. ☕✨ <br>
+            إنتي قولتي إني مكسب، بس الحقيقة إنك إنتي اللي مكسب وعوض وسند.. إنتي حد نادر، بيفهم من غير ما أتكلم، وبيستحملني في أصعب حالاتي، وده اللي بيخليني متأكد إن مفيش "بديل" ليكي، ولا في حد يقدر يملأ مكانك مهما حصل.. قلبك ده مفيش منه اتنين، وخوفك عليا اللي ظهر في رسالتك ليا قبل كده، لسه مأثر فيا لحد دلوقتي ومخلي ليكي معزة خاصة جداً في قلبي.. 💗🥹 <br>
+            وعد مني إني هفضل موجود، وسند ليكي في أي وقت تحتاجيني فيه، وهحاول دايماً أكون عند حسن ظنك بيا.. مش عايزك تخافي أبداً من فكرة إني أبعد، لأن اللي زيك بيتحط جوه القلب ويتقفل عليه.. 🔒🩵 <br>
+            يارب تكون سنة قمر زيك يا شيهو، وتفرحي فيها بكل خطوة بتاخديها، وتفضلي دايماً الشخصية النقية الطيبة اللي أنا محظوظ جداً إنها في حياتي.. كل سنة وإنتي طيبة يا ست البنات، وعيد ميلاد سعيد يا أغلى شهد في الدنيا.. 🩵🫶🏻🎂 <br>
+            
+            <button class="btn" style="background: var(--lilo-purple); margin-top: 20px;" onclick="restart()">نشوف من الأول تاني؟ ✨</button>
+        </div>
+    </div>
+
+    <script>
+        const birthdayDate = new Date(2026, 0, 15, 22, 14, 0).getTime(); 
+
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = birthdayDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = `${days} : ${hours} : ${minutes} : ${seconds}`;
+
+            if (distance < 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown-screen").style.display = "none";
+                document.getElementById("main-content").style.display = "block";
+            }
+        }, 1000);
+
+        const mainText = document.getElementById('main-text');
+        const buttonsDiv = document.getElementById('buttons');
+        const messageArea = document.getElementById('message-area');
+        const stitchImg = document.getElementById('stitch-img');
+
+        function nextStep(step) {
+            if (step === 1) {
+                stitchImg.src = "photo-2.jpg"; 
+                mainText.innerText = "كل سنة وإنتي طيبة يا قمر 🎂";
+                buttonsDiv.innerHTML = `<button class="btn" onclick="nextStep(2)">وإنت طيب يا ميجو 🥹</button>`;
+            } else if (step === 2) {
+                stitchImg.src = "photo-4.jpg"; 
+                mainText.innerText = "عندي ليكي كلام كتير مستني اليوم ده علشان اقولهولك.. ✨";
+                buttonsDiv.innerHTML = `<button class="btn" onclick="showFinal()">أنا سامعة.. قولي 🌸</button>`;
+            }
+        }
+
+        function showFinal() {
+            stitchImg.src = "photo-3.jpg"; 
+            mainText.style.display = 'none';
+            buttonsDiv.style.display = 'none';
+            messageArea.style.display = 'block';
+        }
+
+        // وظيفة إعادة تشغيل المفاجأة
+        function restart() {
+            messageArea.style.display = 'none';
+            mainText.style.display = 'block';
+            buttonsDiv.style.display = 'block';
+            stitchImg.src = "photo-1.jpg";
+            mainText.innerText = "إنتي شيهو؟ 🧐";
+            buttonsDiv.innerHTML = `<button class="btn" onclick="nextStep(1)">أيوة أنا 🌚</button>`;
+        }
+    </script>
+</body>
+</html>
